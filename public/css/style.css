@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #ff6666;
-	--dark-color-b: #ff7373;
-	--light-color: #ffe6e6;
+	--dark-color-a: #2C2F33;
+	--dark-color-b: #23272A;
+	--light-color: #7289DA;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -13,11 +13,12 @@
 	margin: 0;
 	padding: 0;
 }
-
+/*MESSAGE TEXT COLOUR!!!*/
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background: var(--light-color);
+  color: white;
+	background: var(--dark-color-b);
 	margin: 20px;
 }
 
@@ -41,8 +42,9 @@ a {
 /* Chat Page */
 
 .chat-container {
-	max-width: 1100px;
-	background: #fff;
+	max-width: 11000px;
+  height: 700px;
+	background: var(--dark-color-a);
 	margin: 30px auto;
 	overflow: hidden;
 }
@@ -66,8 +68,9 @@ a {
 .chat-sidebar {
 	background: var(--dark-color-b);
 	color: #fff;
+  height: 552px;
 	padding: 20px 20px 60px;
-	overflow-y: scroll;
+	overflow-y: none;
 }
 
 .chat-sidebar h2 {
@@ -87,14 +90,14 @@ a {
 
 .chat-messages {
 	padding: 30px;
-	max-height: 500px;
+	height: 552px;
 	overflow-y: scroll;
 }
 
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: var(--light-color);
+	background-color: rgb(61, 65, 70);
 	border-radius: 5px;
 	overflow-wrap: break-word;
 }
@@ -102,13 +105,13 @@ a {
 .chat-messages .message .meta {
 	font-size: 15px;
 	font-weight: bold;
-	color: var(--dark-color-b);
+	color: white;
 	opacity: 0.7;
 	margin-bottom: 7px;
 }
 
 .chat-messages .message .meta span {
-	color: #777;
+	color: var(--dark-color-b);
 }
 
 .chat-form-container {
@@ -144,7 +147,7 @@ a {
 
 .join-main {
 	padding: 30px 40px;
-	background: var(--dark-color-b);
+	background: var(--dark-color-a);
 }
 
 .join-main p {

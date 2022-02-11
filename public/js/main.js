@@ -105,7 +105,7 @@ function myFunction() {
   }
   window.onfocus = function() {
     notif_count = 0;
-    document.title = "ChatRoom App";
+    document.title = "Alfie's Chatroom";
   }
 }
 
@@ -120,3 +120,12 @@ function showNotificationCount(count){
     document.title = "(" + count + ")" + document.title;
   }
 }
+
+
+(function() {
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAa1JREFUOE+tks1rE2EQxp9n3zRJs40I/QcUbHst9iioa7aCHvygFE23VMT/Qb3rUfGmFz30Y5OAoHgQQTdNTkJB6EnwWMVDv05hkw2074xUMHQ10kM6t2FmfjzPzBADBgecx/EBut7shDXZZQB5VV0Vq49PNKu7RylMKWj7wTuQ134PKTYVaBEwVHxXSF2S5GXx89vtw9AUIPHLdwXOKwAfHdGaCr/t0apxOEaaGUDPA1xwo5X3fyA9gJ65kktOjX4VtY9G6tXFftLb/tx1gIvOvp0cbtY2Dnp6gNi7XaIxD90onI4vlcug3aE4OdJkSbsLZk4PRytLnen5qoh+GamHT1OAxJ+/KNT77qfwars0d8/Q2RTYvCjzGWDLKsbc1cqLjh8sAbpeiCrPUgCdmhpqn5xYp8gDt1HreTxsJfHKF8SY19zvnC003/xMAQ6SuBTcUeJmMQpvtLzgXDaj29hz1FLGYTgD4rKILhTrlca/SwScjh98cJQbQhmC0gOxA8AA+gPKqBBjmWthq+8Zu6Vb48LMcwVzUGl0Yz4Z/au532WO75WPetn/1QdW8AvlTKwRZGGQnQAAAABJRU5ErkJggg==';
+    document.getElementsByTagName('head')[0].appendChild(link);
+})();

@@ -10,11 +10,11 @@
   "author": "Anmol Srivastava",
   "license": "MIT",
   "dependencies": {
+    "chroma-js": "^2.4.2",
+    "ep_ice_font_color": "0.0.3",
     "express": "^4.17.1",
     "moment": "^2.29.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+  "devDependencies": {}
 }
